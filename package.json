@@ -1,0 +1,19 @@
+{
+  "name": "DataWallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bitbox-sdk": "^3.0.11",
+    "datacash": "git+https://github.com/fountainhead-cash/datacash.git"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10"
+  }
+}
