@@ -13,8 +13,10 @@ class DataWallet {
               BITBOX.Mnemonic.wordLists().english
             );
 */
+            const mnemonic = "talk story visual hidden behind wasp evil abandon bus brand circle sketch";   
+
             // root seed buffer
-            const rootSeed = BITBOX.Mnemonic.toSeed("talk story visual hidden behind wasp evil abandon bus brand circle sketch");
+            const rootSeed = BITBOX.Mnemonic.toSeed(mnemonic);
 
 
             // master HDNode
@@ -32,8 +34,8 @@ class DataWallet {
             const cha_address = BITBOX.HDNode.toCashAddress(change);
             const data = BITBOX.HDNode.derivePath(account, "2/0");
             const dat_address = BITBOX.HDNode.toCashAddress(data);
-
-            console.log(rootSeed);
+            
+            console.log(mnemonic);
             console.log(path + "/0/0: " + ext_address);
             console.log(path + "/1/0: " + cha_address);
             console.log(path + "/2/0: " + dat_address);
