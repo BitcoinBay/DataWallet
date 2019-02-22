@@ -5,7 +5,7 @@ var query = {
     "v": 3,
     "q": {
         "find": { "out.b0": { "op": 106 }, "out.h1": "6d02" },
-        "limit": 100,
+        "limit": 10,
         "project": { "out.$": 1 }
     },
     "r": {
